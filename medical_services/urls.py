@@ -1,8 +1,8 @@
 from django.urls import path
 from medical_services.views import home, CategoryListView, CategoryCreateView, ServiceListView, \
     CategoryServiceListView, \
-    ServiceCreateView, ServiceDetailView, ServiceUpdateView, ServiceDeleteView, CategoryUpdateView, CategoryDeleteView, \
-    ContactView, ServiceCartView, AddToCartView, remove_service, clear_service
+    ServiceCreateView, ServiceDetailView, ServiceUpdateView, ServiceDeleteView, CategoryUpdateView, \
+    CategoryDeleteView, ContactView, ServiceCartView, AddToCartView, remove_service, clear_service
 
 from medical_services.apps import MedicalServicesConfig
 app_name = MedicalServicesConfig.name

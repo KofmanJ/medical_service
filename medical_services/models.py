@@ -12,7 +12,6 @@ class Category(models.Model):
     category_title = models.CharField(max_length=100, verbose_name='название')
     category_description = models.TextField(verbose_name='описание')
     category_image = models.ImageField(upload_to='categories/', verbose_name='изображение', **NULLABLE)
-    # administrator = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, verbose_name='администратор')
 
     def __str__(self):
         return self.category_title
@@ -53,4 +52,3 @@ class Cart(models.Model):
     class Meta:
         verbose_name = "корзина"
         verbose_name_plural = "корзины"
-
